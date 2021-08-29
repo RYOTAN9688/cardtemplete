@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import { BaseButton } from './BaseButton'
 
 export const SecondryButton = props => {
-  const { children } = props
-  return <Sbutton>{children}</Sbutton>
+  const { children, onClick } = props
+  return <Sbutton onClick={onClick}>{children}</Sbutton>
 }
 
 const Sbutton = styled(BaseButton)`
