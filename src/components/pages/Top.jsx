@@ -5,10 +5,10 @@ import { useHistory } from 'react-router'
 
 export const Top = () => {
   const history = useHistory()
-  const onClickAdmin = () =>
-    history.push({ pathname: '/users', state: { isAdmin: true } })
-  const onClickGeneral = () =>
-    history.push({ pathname: '/users', state: { isAdmin: false } })
+
+  const onClickAdmin = () => history.push('/users')
+  const onClickGeneral = () => history.push('/users')
+
   return (
     <Scontainer>
       <h2>TOPページです</h2>
